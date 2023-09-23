@@ -1,0 +1,32 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# System Files
+Thumbs.db
+.DS_Store
+__MACOSX
+
+# IDE and editors
+.idea
+.vscode
+
+# Compiled output
+/dist
+/tmp
+
+# Logs
+/logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+/node_modules
+
+# Lock files
+# https://stackoverflow.com/questions/45022048/why-does-npm-install-rewrite-package-lock-json
+package-lock.json
+/package-lock.json
+/yarn.lock
+
+# dotenv environment variables file
+.env
