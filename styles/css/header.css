@@ -4,6 +4,7 @@
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 50px;
+  line-height: normal;
 }
 .header .container {
   height: 66px;
@@ -24,7 +25,6 @@
 }
 .header .container .logoBlock .logo .pageName {
   font-size: 36px;
-  line-height: normal;
   color: var(--main-regular);
 }
 .header .container .logoBlock .burger {
@@ -56,6 +56,7 @@
   display: inline-block;
   width: 33px;
   height: 25px;
+  line-height: 25px;
   text-align: center;
   border-radius: 8px;
   font-size: 12px;
