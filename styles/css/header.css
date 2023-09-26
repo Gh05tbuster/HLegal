@@ -166,14 +166,14 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .header .container .logoBlock svg {
+  .header .container .logoBlock .logo svg {
     height: 32px;
     width: 69px;
   }
-  .header .container .logoBlock .slash {
+  .header .container .logoBlock .logo .slash {
     height: 26px;
   }
-  .header .container .logoBlock .pageName {
+  .header .container .logoBlock .logo .pageName {
     font-size: 20px;
   }
   .header .container .logoBlock .burger {

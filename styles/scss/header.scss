@@ -197,17 +197,20 @@
         padding-left: 15px;
         padding-right: 15px;
 
-        svg {
-          height: 32px;
-          width: 69px;
+        .logo {
+          svg {
+            height: 32px;
+            width: 69px;
+          }
+
+          .slash {
+            height: 26px;
+          }
+          .pageName {
+            font-size: 20px;
+          }
         }
 
-        .slash {
-          height: 26px;
-        }
-        .pageName {
-          font-size: 20px;
-        }
         .burger {
           display: block;
 
