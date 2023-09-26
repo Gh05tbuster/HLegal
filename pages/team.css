@@ -1,0 +1,52 @@
+@import "../styles/css/variables.css";
+
+.team .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.team .cardBox {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+/* .team .cardBox .staffCard {
+  margin: 30px;
+} */
+
+.team .cardBox .staffCard .cardInfo {
+  justify-content: space-between;
+}
+
+.team .cardBox .staffCard .staffPhoto {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.team .cardBox .staffCard:hover .title {
+  color: var(--accent);
+}
+.team .cardBox .staffCard:hover .arrow path {
+  stroke: var(--accent);
+}
+
+.team .cardBox .staffCard .text {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (max-width: 1024px) {
+  .team .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .team .cardBox {
+    grid-template-columns: initial;
+  }
+}

@@ -4,6 +4,7 @@
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 50px;
+  margin-bottom: 60px;
   line-height: normal;
 }
 .header .container {
@@ -129,9 +130,11 @@
 @media (max-width: 1024px) {
   .header .container {
     flex-wrap: nowrap;
+    gap: 30px;
     height: auto;
   }
   .header .container .info {
+    margin-bottom: 0;
     order: 1;
     align-self: auto;
   }
@@ -146,6 +149,9 @@
 @media (max-width: 768px) {
   .header {
     padding: 0;
+  }
+  .header .container {
+    gap: 0;
   }
   .header .container .info {
     justify-content: space-between;
@@ -164,6 +170,8 @@
     display: none;
   }
   .header .container .logoBlock {
+    padding-top: 15px;
+    padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
   }

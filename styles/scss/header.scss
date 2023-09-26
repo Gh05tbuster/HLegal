@@ -5,6 +5,7 @@
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 50px;
+  margin-bottom: 60px;
   line-height: normal;
 
   .container {
@@ -151,9 +152,11 @@
   .header {
     .container {
       flex-wrap: nowrap;
+      gap: 30px;
       height: auto;
 
       .info {
+        margin-bottom: 0;
         order: 1;
         align-self: auto;
       }
@@ -174,6 +177,7 @@
   .header {
     padding: 0;
     .container {
+      gap: 0;
       .info {
         justify-content: space-between;
         background-color: var(--grey-bg);
@@ -195,6 +199,8 @@
       }
 
       .logoBlock {
+        padding-top: 15px;
+        padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 15px;
 
