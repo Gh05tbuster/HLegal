@@ -1,0 +1,187 @@
+@import "variables.css";
+.header {
+  background-color: #fff;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+}
+.header .container {
+  height: 66px;
+  padding-left: 0;
+  padding-right: 0;
+  flex-flow: column wrap;
+}
+.header .container .logoBlock {
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+.header .container .logoBlock .logo {
+  gap: 4px;
+}
+.header .container .logoBlock .logo .slash {
+  aspect-ratio: 0.45;
+  height: 47px;
+}
+.header .container .logoBlock .logo .pageName {
+  font-size: 36px;
+  line-height: normal;
+  color: var(--main-regular);
+}
+.header .container .logoBlock .burger {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.header .container .info {
+  align-self: flex-end;
+  height: 25px;
+  margin-bottom: 16px;
+  gap: 6px;
+  justify-content: start;
+  align-items: center;
+}
+.header .container .info .separator {
+  width: 6px;
+  height: 6px;
+}
+.header .container .info a {
+  color: var(--grey-text);
+}
+.header .container .info .langBlock {
+  list-style: none;
+}
+.header .container .info .langBlock .btn {
+  display: inline-block;
+  width: 33px;
+  height: 25px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.header .container .info .langBlock .btn:hover {
+  background-color: var(--grey-bg);
+}
+.header .container .info .langBlock .btn.active {
+  background-color: var(--accent);
+  color: #fff;
+}
+.header .container .info .phone {
+  font-weight: 700;
+}
+.header .container .info .facebook {
+  display: block;
+}
+.header .container .info .facebook:hover {
+  cursor: pointer;
+}
+.header .container .info .facebook:hover path {
+  fill: var(--accent);
+}
+.header .container .headerNav {
+  align-self: flex-end;
+  height: 25px;
+  font-weight: 700;
+  text-align: center;
+  gap: 15px;
+  justify-content: start;
+  align-items: flex-start;
+}
+.header .container .headerNav .active {
+  color: var(--accent);
+  position: relative;
+}
+.header .container .headerNav .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--accent);
+}
+.header .container .headerNav a {
+  position: relative;
+}
+.header .container .headerNav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 50%;
+  height: 2px;
+  width: 0;
+  background-color: var(--active-regular);
+  transition: all 0.1s linear;
+}
+.header .container .headerNav a:hover {
+  color: var(--active-regular);
+}
+.header .container .headerNav a:hover::after {
+  width: 100%;
+  margin-left: 0;
+}
+
+@media (max-width: 1024px) {
+  .header .container {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .header .container .info {
+    order: 1;
+    align-self: auto;
+  }
+  .header .container .logoBlock {
+    order: 2;
+  }
+  .header .container .headerNav {
+    order: 3;
+    align-self: auto;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+  .header .container .info {
+    background-color: var(--grey-bg);
+    padding: 10px 15px;
+    height: 45px;
+    width: 100%;
+  }
+  .header .container .info .separator {
+    display: none;
+  }
+  .header .container .info .address {
+    display: none;
+  }
+  .header .container .info .facebook {
+    display: none;
+  }
+  .header .container .logoBlock {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header .container .logoBlock svg {
+    height: 32px;
+    width: 69px;
+  }
+  .header .container .logoBlock .slash {
+    height: 26px;
+  }
+  .header .container .logoBlock .pageName {
+    font-size: 20px;
+  }
+  .header .container .logoBlock .burger {
+    display: block;
+  }
+  .header .container .logoBlock .burger:active {
+    background-color: var(--grey-separator);
+  }
+  .header .headerNav {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */
