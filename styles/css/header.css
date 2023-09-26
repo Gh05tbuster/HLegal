@@ -36,11 +36,10 @@
 }
 .header .container .info {
   align-self: flex-end;
-  width: 478px;
   height: 25px;
   margin-bottom: 16px;
   gap: 6px;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 }
 .header .container .info .separator {
@@ -84,11 +83,11 @@
 }
 .header .container .headerNav {
   align-self: flex-end;
-  max-width: 416px;
   height: 25px;
   font-weight: 700;
+  text-align: center;
   gap: 15px;
-  justify-content: space-between;
+  justify-content: start;
   align-items: flex-start;
 }
 .header .container .headerNav .active {
