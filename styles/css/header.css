@@ -54,7 +54,7 @@
   list-style: none;
 }
 .header .container .info .langBlock .btn {
-  display: inline-block;
+  display: block;
   width: 33px;
   height: 25px;
   line-height: 25px;
@@ -62,7 +62,6 @@
   border-radius: 8px;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 1px;
 }
 .header .container .info .langBlock .btn:hover {
   background-color: var(--grey-bg);
@@ -71,7 +70,7 @@
   background-color: var(--accent);
   color: #fff;
 }
-.header .container .info .phone {
+.header .container .info .tel {
   font-weight: 700;
 }
 .header .container .info .facebook {
@@ -149,6 +148,7 @@
 @media (max-width: 768px) {
   .header {
     padding: 0;
+    margin-bottom: 30px;
   }
   .header .container {
     gap: 0;

@@ -45,8 +45,8 @@ select {
 }
 
 .section {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: var(--section-padding-y);
+  padding-right: var(--section-padding-y);
 }
 
 .container {
@@ -54,8 +54,8 @@ select {
   max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
 }
 
@@ -93,4 +93,11 @@ select {
 
 .title.h4 {
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-left: calc(var(--section-padding-y) / 2);
+    padding-right: calc(var(--section-padding-y) / 2);
+  }
 }

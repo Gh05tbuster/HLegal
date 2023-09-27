@@ -62,7 +62,7 @@
         list-style: none;
 
         .btn {
-          display: inline-block;
+          display: block;
           width: 33px;
           height: 25px;
           line-height: 25px;
@@ -70,7 +70,6 @@
           border-radius: 8px;
           font-size: 12px;
           font-weight: 700;
-          letter-spacing: 1px;
 
           &:hover {
             background-color: var(--grey-bg);
@@ -82,7 +81,7 @@
           }
         }
       }
-      .phone {
+      .tel {
         font-weight: 700;
       }
 
@@ -176,6 +175,7 @@
 @media (max-width: 768px) {
   .header {
     padding: 0;
+    margin-bottom: 30px;
     .container {
       gap: 0;
       .info {
