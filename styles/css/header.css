@@ -89,7 +89,7 @@
   text-align: center;
   gap: 15px;
   justify-content: start;
-  align-items: flex-start;
+  align-items: center;
 }
 .header .container .headerNav .active {
   color: var(--accent);
