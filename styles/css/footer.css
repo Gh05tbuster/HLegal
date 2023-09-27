@@ -64,6 +64,7 @@
   }
   .footer .container .copyright {
     align-self: center;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
