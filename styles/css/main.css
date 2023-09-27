@@ -45,18 +45,22 @@ select {
 }
 
 .section {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: var(--section-padding-y);
+  padding-right: var(--section-padding-y);
 }
 
 .container {
   width: 100%;
-  max-width: calc(var(--container-width) + var(--basic-space) * 2);
+  max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--basic-space);
-  padding-right: var(--basic-space);
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
+}
+
+.container.small {
+  max-width: var(--small-container-width);
 }
 
 .title {
@@ -66,7 +70,10 @@ select {
 }
 
 .title.h1 {
-  color: var(--gradient-red-text);
+  background: var(--gradient-red-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 38px;
 }
 
@@ -86,4 +93,11 @@ select {
 
 .title.h4 {
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-left: calc(var(--section-padding-y) / 2);
+    padding-right: calc(var(--section-padding-y) / 2);
+  }
 }

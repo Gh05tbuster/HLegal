@@ -41,11 +41,11 @@
   fill: var(--accent);
   cursor: pointer;
 }
-.footer .container .contact .phone {
+.footer .container .contact .tel {
   font-weight: 700;
   color: var(--main-alt);
 }
-.footer .container .contact .phone:hover {
+.footer .container .contact .tel:hover {
   color: var(--main-alt);
 }
 .footer .container .contact .email {
@@ -64,6 +64,7 @@
   }
   .footer .container .copyright {
     align-self: center;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {

@@ -1,0 +1,89 @@
+@import "../styles/css/variables.css";
+
+.h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.team .cardBox {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.team .cardBox .staffCard .cardInfo {
+  justify-content: space-between;
+}
+
+.team .cardBox .staffCard .staffPhoto {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.team .cardBox .staffCard:hover .title {
+  color: var(--accent);
+}
+.team .cardBox .staffCard:hover .arrow path {
+  stroke: var(--accent);
+}
+
+.team .cardBox .staffCard .text {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (max-width: 1720px) {
+  .heading .h1 {
+    margin-left: calc(180px - var(--section-padding-y));
+    margin-right: calc(180px - var(--section-padding-y));
+  }
+}
+
+@media (max-width: 1024px) {
+  .heading .h1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .team .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heading .title.h1 {
+    font-size: 30px;
+  }
+
+  .team .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .team .small {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .team .cardBox {
+    grid-template-columns: initial;
+    gap: 30px;
+  }
+
+  .team .cardBox .staffCard {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team .cardBox .staffCard .staffPhoto {
+    height: 300px;
+  }
+}

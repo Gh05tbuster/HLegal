@@ -5,6 +5,7 @@
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 50px;
+  margin-bottom: 60px;
   line-height: normal;
 
   .container {
@@ -61,7 +62,7 @@
         list-style: none;
 
         .btn {
-          display: inline-block;
+          display: block;
           width: 33px;
           height: 25px;
           line-height: 25px;
@@ -69,7 +70,6 @@
           border-radius: 8px;
           font-size: 12px;
           font-weight: 700;
-          letter-spacing: 1px;
 
           &:hover {
             background-color: var(--grey-bg);
@@ -81,7 +81,7 @@
           }
         }
       }
-      .phone {
+      .tel {
         font-weight: 700;
       }
 
@@ -151,9 +151,11 @@
   .header {
     .container {
       flex-wrap: nowrap;
+      gap: 30px;
       height: auto;
 
       .info {
+        margin-bottom: 0;
         order: 1;
         align-self: auto;
       }
@@ -173,7 +175,9 @@
 @media (max-width: 768px) {
   .header {
     padding: 0;
+    margin-bottom: 30px;
     .container {
+      gap: 0;
       .info {
         justify-content: space-between;
         background-color: var(--grey-bg);
@@ -195,6 +199,8 @@
       }
 
       .logoBlock {
+        padding-top: 15px;
+        padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 15px;
 
