@@ -76,9 +76,6 @@
 .header .container .info .facebook {
   display: block;
 }
-.header .container .info .facebook:hover {
-  cursor: pointer;
-}
 .header .container .info .facebook:hover path {
   fill: var(--accent);
 }
@@ -124,6 +121,43 @@
 .header .container .headerNav a:hover::after {
   width: 100%;
   margin-left: 0;
+}
+.header.dark {
+  background-color: var(--main-regular);
+  color: #fff;
+}
+.header.dark .container .logoBlock .logo svg path:not(:first-child) {
+  fill: #fff;
+}
+.header.dark .container .logoBlock .logo .pageName {
+  color: #fff;
+}
+.header.dark .container .logoBlock .burger path {
+  stroke: #fff;
+}
+.header.dark .container .logoBlock .burger:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header.dark .container .info a {
+  color: #fff;
+}
+.header.dark .container .info .langBlock .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header.dark .container .info .fbLink svg path {
+  fill: #fff;
+}
+.header.dark .container .info .fbLink:hover svg path {
+  fill: var(--accent);
+}
+.header.dark .container .headerNav a {
+  color: #fff;
+}
+.header.dark .container .headerNav a::after {
+  background-color: #fff;
+}
+.header.dark .container .headerNav a:hover {
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -193,5 +227,8 @@
   }
   .header .headerNav {
     display: none;
+  }
+  .header.dark .container .info {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }/*# sourceMappingURL=header.css.map */

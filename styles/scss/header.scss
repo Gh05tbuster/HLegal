@@ -88,7 +88,6 @@
       .facebook {
         display: block;
         &:hover {
-          cursor: pointer;
           path {
             fill: var(--accent);
           }
@@ -140,6 +139,66 @@
           &::after {
             width: 100%;
             margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.dark {
+    background-color: var(--main-regular);
+    color: #fff;
+    .container {
+      .logoBlock {
+        .logo {
+          svg path:not(:first-child) {
+            fill: #fff;
+          }
+
+          .pageName {
+            color: #fff;
+          }
+        }
+        .burger {
+          path {
+            stroke: #fff;
+          }
+
+          &:active {
+            background-color: #fff3;
+          }
+        }
+      }
+      .info {
+        a {
+          color: #fff;
+        }
+
+        .langBlock {
+          .btn:hover {
+            background-color: #fff3;
+          }
+        }
+        .fbLink {
+          svg path {
+            fill: #fff;
+          }
+          &:hover {
+            svg path {
+              fill: var(--accent);
+            }
+          }
+        }
+      }
+
+      .headerNav {
+        a {
+          color: #fff;
+          &::after {
+            background-color: #fff;
+          }
+          &:hover {
+            color: #fff;
           }
         }
       }
@@ -229,6 +288,13 @@
     }
     .headerNav {
       display: none;
+    }
+    &.dark {
+      .container {
+        .info {
+          background-color: #fff3;
+        }
+      }
     }
   }
 }
