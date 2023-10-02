@@ -1,0 +1,132 @@
+:root {
+  --big-gap: 60px;
+}
+
+.contact .container {
+  justify-content: space-between;
+  gap: var(--big-gap);
+}
+
+.contact .container .contactInfo {
+  width: calc(50% - var(--big-gap) / 2);
+}
+
+.contactInfo .text {
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--main-regular);
+}
+
+.contactInfo .tel {
+  margin-bottom: 15px;
+}
+
+.contactInfo .fbLink {
+  align-items: center;
+  gap: 10px;
+  transition: none;
+}
+
+.contactInfo .fbBlock {
+  align-self: start;
+}
+
+.contactInfo .fbLink .linkText {
+  width: 105px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.contactInfo .fbLink:hover svg path {
+  fill: var(--accent);
+}
+
+.contact .container .form {
+  width: calc(50% - var(--big-gap) / 2);
+  padding: 30px;
+  background-color: var(--grey-bg);
+  border-radius: 12px;
+  align-items: stretch;
+  flex: 1 0 0;
+}
+
+.contact .form .title.h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact .form .title.h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--grey-text);
+}
+
+.contact .form .textInput {
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  resize: none;
+  transition: none;
+}
+
+.contact .form .textInput::placeholder {
+  color: var(--grey-text);
+}
+
+.contact .form .textInput:focus {
+  outline: 1px solid var(--active-regular);
+}
+
+.contact .form .textInput:invalid {
+  outline: 1px solid #f00;
+}
+
+.contact .form .textInput:disabled {
+  background-color: var(--grey-bg-alt);
+}
+
+.contact .form .submit {
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 18px 30px;
+  background-color: var(--active-regular);
+  box-shadow: 0 0 20px #24a3ff80;
+  color: #fff;
+  font-weight: 700;
+}
+
+.contact .form .submit:hover {
+  background-color: var(--active-hover);
+}
+
+.contact .form .submit:active {
+  background-color: var(--active-active);
+}
+
+@media (max-width: 1024px) {
+  .contact .container {
+    flex-direction: column;
+  }
+
+  .contact .container .contactInfo {
+    width: 100%;
+  }
+
+  .contact .container .form {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contact .container {
+    gap: 30px;
+  }
+}
