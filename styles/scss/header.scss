@@ -88,7 +88,6 @@
       .facebook {
         display: block;
         &:hover {
-          cursor: pointer;
           path {
             fill: var(--accent);
           }
@@ -145,6 +144,66 @@
       }
     }
   }
+
+  &.dark {
+    background-color: var(--main-regular);
+    color: #fff;
+    .container {
+      .logoBlock {
+        .logo {
+          svg path:not(:first-child) {
+            fill: #fff;
+          }
+
+          .pageName {
+            color: #fff;
+          }
+        }
+        .burger {
+          path {
+            stroke: #fff;
+          }
+
+          &:active {
+            background-color: #fff3;
+          }
+        }
+      }
+      .info {
+        a {
+          color: #fff;
+        }
+
+        .langBlock {
+          .btn:hover {
+            background-color: #fff3;
+          }
+        }
+        .fbLink {
+          svg path {
+            fill: #fff;
+          }
+          &:hover {
+            svg path {
+              fill: var(--accent);
+            }
+          }
+        }
+      }
+
+      .headerNav {
+        a {
+          color: #fff;
+          &::after {
+            background-color: #fff;
+          }
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -193,7 +252,7 @@
           display: none;
         }
 
-        .facebook {
+        .fbLink {
           display: none;
         }
       }
@@ -229,6 +288,13 @@
     }
     .headerNav {
       display: none;
+    }
+    &.dark {
+      .container {
+        .info {
+          background-color: #fff3;
+        }
+      }
     }
   }
 }
