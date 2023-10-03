@@ -1,26 +1,26 @@
 $(document).ready(function () {
     $('.burger').click(function (event) {
-        $('.headerNav').addClass('floating');
-        $('.popupWrapper').removeClass('hidden');
+        showPopup();
     });
 
     $('.closeBtn').click(function () {
-        $('.headerNav').removeClass('floating');
-        $('.popupWrapper').addClass('hidden');
+        hidePopup();
     });
 
     $('.popupWrapper').click(function () {
-        $('.headerNav').removeClass('floating');
-        $('.popupWrapper').addClass('hidden');
-    });
-
-    $(window).on("scroll", function () {
-        $('.headerNav').removeClass('floating');
-        $('.popupWrapper').addClass('hidden');
+        hidePopup();
     });
 
     $(window).on("resize", function () {
-        $('.headerNav').removeClass('floating');
-        $('.popupWrapper').addClass('hidden');
+        hidePopup();
     });
 });
+
+function showPopup() {
+    $('.headerNav').addClass('floating');
+    $('.popupWrapper').removeClass('hidden');
+}
+function hidePopup() {
+    $('.headerNav').removeClass('floating');
+    $('.popupWrapper').addClass('hidden');
+}
