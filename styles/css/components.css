@@ -6,3 +6,12 @@
   background-color: var(--grey-separator);
   margin: 30px 0;
 }
+
+.popupWrapper {
+  background-color: #323264cc;
+  inset: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/icons/h.svg" type="image/x-icon">
     <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../styles/css/components.css">
     <link rel="stylesheet" href="../styles/css/main.css">
     <link rel="stylesheet" href="../styles/css/atomic.css">
     <link rel="stylesheet" href="./team.css">
@@ -104,6 +105,13 @@
                 </a>
             </div>
             <nav class="headerNav flex">
+                <svg class="closeBtn" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                        <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                    </g>
+                </svg>
                 <a href="./about.html" class="navItem">about us</a>
                 <a href="./services.html" class="navItem">services</a>
                 <p class="navItem active">team</p>
@@ -239,10 +247,10 @@
             </div>
             <div class="contact flex">
                 <a href="#" class="fbLink">
-                    <svg class="facebook" onclick="" width="38" height="38" viewBox="0 0 38 38" fill="none"
+                    <svg class="facebook" width="38" height="38" viewBox="0 0 38 38" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_22721_6812)">
-                            <path id="Vector_f"
+                            <path
                                 d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
                                 fill="#24A3FF" />
                         </g>
@@ -262,6 +270,9 @@
             <p class="copyright">© 2021 HLEGAL Law company, LLC</p>
         </div>
     </footer>
+    <div class="popupWrapper hidden"></div>
+    <script src="../assets/jquery/jquery-3.7.1.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>

@@ -104,6 +104,10 @@
       justify-content: start;
       align-items: center;
 
+      .closeBtn {
+        display: none;
+      }
+
       .active {
         color: var(--accent);
         position: relative;
@@ -142,6 +146,61 @@
           }
         }
       }
+
+      &.floating {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        position: fixed;
+        top: 15%;
+        width: 95%;
+        max-width: 400px;
+        height: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 12px;
+        background-color: #fff;
+        border-radius: 12px;
+        z-index: 10;
+
+        .closeBtn {
+          display: block;
+          align-self: flex-end;
+          cursor: pointer;
+        }
+
+        .active {
+          color: var(--accent);
+
+          &::after {
+            height: 0;
+          }
+        }
+
+        .navItem {
+          background-color: var(--grey-bg);
+          padding-top: 7px;
+          padding-bottom: 7px;
+          border-radius: 12px;
+
+          &::after {
+            height: 0;
+          }
+        }
+
+        a {
+          color: var(--active-regular);
+        }
+
+        a:hover {
+          color: var(--active-regular);
+        }
+
+        a:active {
+          background-color: var(--grey-separator);
+        }
+      }
     }
   }
 
@@ -175,8 +234,13 @@
         }
 
         .langBlock {
-          .btn:hover {
-            background-color: #fff3;
+          .btn {
+            &:hover {
+              background-color: #fff3;
+            }
+            &.active {
+              background-color: var(--accent);
+            }
           }
         }
         .fbLink {
@@ -288,6 +352,10 @@
     }
     .headerNav {
       display: none;
+
+      a {
+        color: var(--active-regular) !important;
+      }
     }
     &.dark {
       .container {
