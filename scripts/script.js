@@ -14,6 +14,11 @@ $(document).ready(function () {
         $('.popupWrapper').addClass('hidden');
     });
 
+    $(window).on("scroll", function () {
+        $('.headerNav').removeClass('floating');
+        $('.popupWrapper').addClass('hidden');
+    });
+
     $(window).on("resize", function () {
         $('.headerNav').removeClass('floating');
         $('.popupWrapper').addClass('hidden');
