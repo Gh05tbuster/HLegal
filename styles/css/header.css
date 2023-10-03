@@ -286,12 +286,4 @@
   .header.dark .container .info {
     background-color: rgba(255, 255, 255, 0.2);
   }
-}
-.popupWrapper {
-  background-color: rgba(50, 50, 100, 0.8);
-  inset: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
 }/*# sourceMappingURL=header.css.map */
