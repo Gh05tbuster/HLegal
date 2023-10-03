@@ -11,6 +11,10 @@ $(document).ready(function () {
         hidePopup();
     });
 
+    $(window).on("scroll", function () {
+        hidePopup();
+    });
+
     $(window).on("resize", function () {
         hidePopup();
     });
