@@ -63,6 +63,18 @@ select {
   max-width: var(--small-container-width);
 }
 
+.cardSlider {
+  width: 500px;
+}
+
+.card {
+  width: 100%;
+  padding: 1px;
+  margin: 10px;
+  background-color: var(--grey-bg);
+  border-radius: 12px;
+}
+
 .title {
   color: var(--main-regular);
   font-weight: 700;

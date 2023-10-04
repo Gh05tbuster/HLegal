@@ -18,6 +18,12 @@ $(document).ready(function () {
     $(window).on("resize", function () {
         hidePopup();
     });
+
+    $('.cardSlider').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 1,
+    });
 });
 
 function showPopup() {
@@ -28,3 +34,4 @@ function hidePopup() {
     $('.headerNav').removeClass('floating');
     $('.popupWrapper').addClass('hidden');
 }
+
