@@ -54,6 +54,7 @@
   list-style: none;
 }
 .header .container .info .langBlock .btn {
+  color: var(--grey-text);
   display: block;
   width: 33px;
   height: 25px;
@@ -62,6 +63,10 @@
   border-radius: 8px;
   font-size: 12px;
   font-weight: 700;
+  cursor: pointer;
+}
+.header .container .info .langBlock .btn.active {
+  cursor: default;
 }
 .header .container .info .langBlock .btn:hover {
   background-color: var(--grey-bg);
