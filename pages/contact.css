@@ -11,6 +11,10 @@
   width: calc(50% - var(--big-gap) / 2);
 }
 
+.contactInfo {
+  gap: 30px;
+}
+
 .contactInfo .text {
   font-size: 21px;
   line-height: 30px;

@@ -4,7 +4,6 @@
   width: 100%;
   height: 4px;
   background-color: var(--grey-separator);
-  margin: 30px 0;
 }
 
 .popupWrapper {
@@ -14,4 +13,45 @@
   width: 100%;
   height: 120%;
   z-index: 9;
+}
+
+.serviceCard {
+  /* title - h3 */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.serviceCard .pic {
+  width: 92px;
+  height: 92px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.articleCard {
+  /* title - h4 */
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.articleCard .pic {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+}
+
+.articleCard .textBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
 }
