@@ -17,7 +17,12 @@
   color: var(--main-regular);
 }
 
-.contactInfo .tel {
+.contactInfo .address {
+  align-self: start;
+}
+
+.contactInfo .tel a {
+  color: var(--main-regular);
   margin-bottom: 15px;
 }
 
