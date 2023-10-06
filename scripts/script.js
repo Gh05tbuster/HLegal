@@ -35,12 +35,12 @@ function hidePopup() {
     $('.popupWrapper').addClass('hidden');
 }
 
-$('.langBlock').click(function (event) {
+$('.langBlock .btn').click(function (event) {
 
     //* add language swap here
     // if there's another page for each lang, there's no need of all of it
 
-    $('.langBlock .btn').each(function (i, elem) {
+    $('.langBlock .btn').each(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             return false;
@@ -49,4 +49,22 @@ $('.langBlock').click(function (event) {
 
     let btn = event.target.id;
     $('#' + btn).addClass('active');
+});
+
+$('.pills .pillsTab .title').click(function (event) {
+    let pi;
+    $('.pills .pillsTab .title').each(function (i, el) {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            pi = el.id;
+            $('.pills .tabContent .' + pi).removeClass('active');
+            $('.pills .tabContent .' + pi).addClass('hidden');
+            return false;
+        }
+    });
+
+    pi = event.target.id;
+    $('.pills .pillsTab #' + pi).addClass('active');
+    $('.pills .tabContent .' + pi).addClass('active');
+    $('.pills .tabContent .' + pi).removeClass('hidden');
 });
