@@ -57,6 +57,7 @@ $('.pills .pillsTab .title').click(function (event) {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             pi = el.id;
+            // $('.pills .tabContent .' + pi).fadeOut(1000);
             $('.pills .tabContent .' + pi).removeClass('active');
             $('.pills .tabContent .' + pi).addClass('hidden');
             return false;
@@ -65,6 +66,7 @@ $('.pills .pillsTab .title').click(function (event) {
 
     pi = event.target.id;
     $('.pills .pillsTab #' + pi).addClass('active');
+    // $('.pills .tabContent .' + pi).fadeIn(1000);
     $('.pills .tabContent .' + pi).addClass('active');
     $('.pills .tabContent .' + pi).removeClass('hidden');
 });

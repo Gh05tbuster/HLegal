@@ -21,7 +21,6 @@
 }
 
 .serviceCard {
-  /* title - h3 */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -35,6 +34,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 24px;
+  margin-bottom: 30px;
+}
+
+.serviceCard .title {
+  margin-bottom: 15px;
 }
 
 .articleCard {
@@ -59,4 +64,19 @@
   padding: 30px;
   text-align: center;
   border-radius: 0 0 8px 8px;
+}
+
+.arrowLink {
+  text-transform: uppercase;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  align-self: start;
+  align-items: center;
+  gap: 2px;
+}
+
+.arrowLink:hover svg path {
+  stroke: var(--accent);
 }

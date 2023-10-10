@@ -136,6 +136,7 @@ select {
   justify-content: start;
   /* align-items: center; */
   gap: 60px;
+  margin-bottom: 60px;
 }
 
 .pills .linearSeparator {
@@ -156,6 +157,7 @@ select {
 .pills .pillsTab .title {
   color: var(--grey-text);
   font-size: 38px;
+  white-space: nowrap;
 }
 
 .pills .pillsTab .title:hover {
@@ -198,17 +200,87 @@ select {
   line-height: 30px;
 }
 
-.cardSlider {
-  width: 500px;
+.services .arrowLink {
+  margin-bottom: 10px;
 }
 
-.card {
+.services > .title {
+  margin-bottom: 60px;
+}
+
+.services .cardBox {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+/* --------------------------------------------*/
+
+.cardSlider {
   width: 100%;
-  padding: 1px;
-  margin: 10px;
+  margin-bottom: 60px;
+}
+
+.cardSlider .hCard {
+  /* width: 100%; */
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: var(--grey-bg);
   border-radius: 12px;
 }
+
+.cardSlider .hCard .arrowLink {
+  margin-bottom: 5px;
+}
+
+.cardSlider .hCard img {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+
+.cardSlider .hCard .cardInfo {
+  padding: 30px;
+}
+
+.cardSlider .hCard .cardInfo .title {
+  margin-bottom: 30px;
+}
+
+.cardSlider .hCard .cardInfo .by-line .name {
+  color: var(--grey-text);
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.cardSlider .hCard .cardInfo .by-line .position {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.cardSlider .slick-dots {
+  bottom: -48px;
+}
+
+.cardSlider .slick-dots li button::before {
+  font-size: 16px;
+  color: var(--active-regular);
+  opacity: 0.2;
+}
+
+.cardSlider .slick-dots li.slick-active button::before {
+  opacity: 1;
+  color: var(--active-regular);
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+/* --------------------------------------------------- */
+
+/* --------------------------------------------------- */
 
 @media (max-width: 768px) {
   .section {
