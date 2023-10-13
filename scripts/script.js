@@ -19,11 +19,11 @@ $(document).ready(function () {
         hidePopup();
     });
 
-    $('.cardSlider').slick({
-        dots: true,
-        infinite: false,
-        slidesToShow: 1,
-    });
+    $('.cardSlider').owlCarousel({
+        loop: false,
+        margin: 20,
+        items: 1,
+    })
 });
 
 function showPopup() {

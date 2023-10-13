@@ -222,8 +222,6 @@ select {
 
 .cardSlider .hCard {
   /* width: 100%; */
-  margin-left: 20px;
-  margin-right: 20px;
   background-color: var(--grey-bg);
   border-radius: 12px;
 }
@@ -232,11 +230,21 @@ select {
   margin-bottom: 5px;
 }
 
-.cardSlider .hCard img {
+.cardSlider .hCard .pic {
+  position: relative;
   width: 400px;
+  min-width: 400px;
+  overflow: hidden;
+  border-radius: 12px 0 0 12px;
+}
+
+.cardSlider .hCard .pic img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px 0 0 12px;
+  /* border-radius: 12px 0 0 12px; */
 }
 
 .cardSlider .hCard .cardInfo {
@@ -260,24 +268,23 @@ select {
   line-height: 22px;
 }
 
-.cardSlider .slick-dots {
-  bottom: -48px;
+.cardSlider.owl-carousel .owl-nav + .owl-dots {
+  margin-top: 30px;
 }
 
-.cardSlider .slick-dots li button::before {
-  font-size: 16px;
-  color: var(--active-regular);
+.cardSlider.owl-carousel button.owl-dot span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--active-regular);
   opacity: 0.2;
 }
 
-.cardSlider .slick-dots li.slick-active button::before {
+.cardSlider.owl-carousel button.owl-dot.active span {
+  background-color: var(--active-regular);
   opacity: 1;
-  color: var(--active-regular);
 }
 
-.slick-initialized .slick-slide {
-  display: flex;
-}
 /* -------------------------------------------------- */
 
 /* -------------------------------------------------- */
