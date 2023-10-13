@@ -23,7 +23,6 @@ $(document).ready(function () {
         loop: false,
         margin: 20,
         items: 1,
-        lazyLoad: false,
     })
 });
 
