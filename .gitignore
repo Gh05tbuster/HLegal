@@ -30,3 +30,5 @@ package-lock.json
 
 # dotenv environment variables file
 .env
+
+assets\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-buildin-plugins.hbs
