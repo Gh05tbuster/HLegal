@@ -42,31 +42,45 @@
   margin-bottom: 15px;
 }
 
-.articleCard {
-  /* title - h4 */
-  font-size: 14px;
-  line-height: 22px;
+.publicationCard {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
 }
 
-.articleCard .pic {
+.publicationCard img {
   width: 100%;
   height: 200px;
   border-radius: 8px 8px 0 0;
+  object-fit: cover;
 }
 
-.articleCard .textBlock {
+.publicationCard .textBlock {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 15px;
   padding: 30px;
-  text-align: center;
   border-radius: 0 0 8px 8px;
 }
 
+.publicationCard .date {
+  color: var(--grey-text);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.publicationCard .text {
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+}
+
 .arrowLink {
+  display: flex;
   text-transform: uppercase;
   line-height: normal;
   font-size: 14px;

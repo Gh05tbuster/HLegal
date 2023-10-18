@@ -315,7 +315,84 @@ select {
 
 /* -------------------------------------------------- */
 
+.companySection {
+  background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 60px;
+}
+
+.companySection .title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.companySection .companyWrapper {
+  width: 100%;
+  max-width: 1720px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.companySection .companyWrapper .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  padding: 12px;
+}
+
+.companySection .companyWrapper .item img {
+  max-width: 60%;
+  max-height: 100%;
+}
+
+.publicationsSection {
+  background-color: var(--grey-bg);
+  padding-top: 30px;
+}
+
+.publicationsSection .container {
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--grey-separator);
+}
+
+.publicationsSection .arrowLink {
+  margin-bottom: 10px;
+}
+
+.publicationsSection .title.h1 {
+  margin-bottom: 30px;
+}
+
+#pubCard-1 {
+  grid-area: pc1;
+}
+
+#pubCard-2 {
+  grid-area: pc2;
+}
+
+#pubCard-3 {
+  grid-area: pc3;
+}
+
+.publicationsSection .cardBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "pc1 pc2 pc3";
+  gap: 30px;
+}
 /* -------------------------------------------------- */
+
+@media (max-width: 1745px) {
+  .companySection .companyWrapper {
+    border-radius: 0;
+  }
+}
 
 @media (max-width: 1024px) {
   .pills {
@@ -326,6 +403,7 @@ select {
     flex-direction: row;
     overflow-x: auto;
     max-width: calc(100vw - var(--section-padding-y) * 2);
+    /* transform: translateX(60px); */
   }
 
   .pills .linearSeparator.vertical {
@@ -338,6 +416,17 @@ select {
 
   .services .cardBox {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .companySection .companyWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .publicationsSection .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "pc1 pc2"
+      "pc3 pc3";
   }
 }
 
@@ -358,8 +447,6 @@ select {
   }
 
   .pills .pillsTab {
-    flex-direction: row;
-    overflow-x: auto;
     max-width: calc(100vw - var(--section-padding-y));
   }
 
@@ -378,5 +465,26 @@ select {
   .services .cardBox {
     grid-template-columns: 100%;
     gap: 30px;
+  }
+
+  .companySection .companyWrapper {
+    grid-template-columns: 100%;
+    height: 720px;
+    overflow-y: auto;
+  }
+
+  .companySection .companyWrapper .item {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .publicationsSection .cardBox {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "pc1"
+      "pc2"
+      "pc3";
   }
 }

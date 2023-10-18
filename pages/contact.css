@@ -5,6 +5,7 @@
 .contact .container {
   justify-content: space-between;
   gap: var(--big-gap);
+  margin-bottom: 60px;
 }
 
 .contact .container .contactInfo {
@@ -137,5 +138,6 @@
 @media (max-width: 768px) {
   .contact .container {
     gap: 30px;
+    margin-bottom: 30px;
   }
 }
