@@ -131,18 +131,20 @@
                 <div class="container small heading flex column">
                     <div></div>
                     <h1 class="title h2">your legal solutions provider</h1>
-                    <svg class="scrollBtn" onclick="scrollDown()" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_22728_11339)">
-                            <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
-                            <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
-                        </g>
-                        <defs>
-                            <clippath>
-                                <rect width="42" height="42" fill="white" />
-                            </clippath>
-                        </defs>
-                    </svg>
+                    <a href="#compSec" onclick="scrollDown(this)">
+                        <svg class="scrollBtn" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_22728_11339)">
+                                <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+                                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                            </g>
+                            <defs>
+                                <clippath>
+                                    <rect width="42" height="42" fill="white" />
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </a>
                 </div>
             </section>
             <section class="section">
@@ -271,7 +273,7 @@
                 </div>
             </section>
         </div>
-        <section class="section hidden">
+        <section class="section hidden" id="carousel">
             <div class="container">
                 <div class="cardSlider owl-carousel owl-theme">
                     <div class="hCard flex">
@@ -342,7 +344,7 @@
                 </div>
             </div>
         </section>
-        <section class="companySection">
+        <section class="companySection" id="compSec">
             <h3 class="title h3 caps">They already trust us</h3>
             <div class="companyWrapper grid">
                 <div class="item bg-1c4280"><img src="./images/Hillel-Logo-OneLine-White-Uk.png" alt="hillel"></div>

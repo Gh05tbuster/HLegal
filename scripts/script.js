@@ -35,6 +35,15 @@ function hidePopup() {
     $('.popupWrapper').addClass('hidden');
 }
 
+function scrollDown(elem) {
+    event.preventDefault();
+    const target = document.querySelector(elem.hash);
+    window.scrollTo({
+        top: target.offsetTop,
+        behavior: "smooth"
+    });
+}
+
 $('.langBlock .btn').click(function (event) {
 
     //* add language swap here
