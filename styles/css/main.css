@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
 }
 
 img {
@@ -63,18 +64,6 @@ select {
   max-width: var(--small-container-width);
 }
 
-.cardSlider {
-  width: 500px;
-}
-
-.card {
-  width: 100%;
-  padding: 1px;
-  margin: 10px;
-  background-color: var(--grey-bg);
-  border-radius: 12px;
-}
-
 .title {
   color: var(--main-regular);
   font-weight: 700;
@@ -107,9 +96,435 @@ select {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
+/* ---------------------------------------------------- */
+
+.gradient {
+  position: relative;
+  background: var(--gradient-supersoft);
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 80px;
+  padding-bottom: 60px;
+  color: #fff;
+}
+
+.gradient::before {
+  content: "";
+  background-color: #cacadb;
+  width: 98%;
+  height: 10px;
+  position: absolute;
+  left: 1%;
+  bottom: -10px;
+  border-radius: 0 0 12px 12px;
+}
+
+.gradient::after {
+  content: "";
+  background-color: #e7e7f2;
+  width: 96%;
+  height: 10px;
+  position: absolute;
+  left: 2%;
+  bottom: -20px;
+  border-radius: 0 0 12px 12px;
+}
+
+.gradient .heading .title {
+  color: #fff;
+  text-align: center;
+}
+
+.section.main {
+  background: url(../../images/icons/h.svg) no-repeat center/contain;
+  /* min-height: 100vh; */
+  margin-bottom: 60px;
+}
+
+.section.main .heading {
+  height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section.main .heading .scrollBtn {
+  cursor: pointer;
+}
+
+.section.main .heading .scrollBtn:hover circle,
+.section.main .heading .scrollBtn:hover path {
+  stroke: var(--accent);
+}
+
+.pills {
+  justify-content: start;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.pills .linearSeparator {
+  background-color: #fff5;
+}
+
+.pills .linearSeparator.horizontal {
+  display: none;
+}
+
+.pills .pillsTab {
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+  gap: 30px;
+}
+
+.pills .pillsTab::-webkit-scrollbar {
+  display: none;
+}
+
+.pills .pillsTab .title {
+  color: var(--grey-text);
+  font-size: 38px;
+  white-space: nowrap;
+}
+
+.pills .pillsTab .title:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.pills .pillsTab .title.active {
+  cursor: default;
+  background: var(--gradient-red-text-reversed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.pills .tabContent {
+  align-self: center;
+  width: 100%;
+}
+
+.pills .tabContent .pillsItem {
+  gap: 30px;
+}
+
+.pills .tabContent .pillsItem.active {
+  display: flex;
+}
+
+.pills .tabContent .pillsItem .title {
+  color: #fff;
+}
+
+.pills .tabContent .pillsItem .text {
+  color: #fff;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.services .arrowLink {
+  margin-bottom: 10px;
+}
+
+.services > .title {
+  margin-bottom: 60px;
+}
+
+.services .cardBox {
+  align-self: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.services .cardBox .serviceCard {
+  max-width: 500px;
+}
+
+/* --------------------------------------------*/
+
+.slogan .cardSlider {
+  max-width: var(--container-width);
+  width: calc(100vw - var(--section-padding-y) * 2);
+  margin-bottom: 60px;
+}
+
+.slogan .cardSlider .hCard {
+  background-color: var(--grey-bg);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slogan .cardSlider .hCard .arrowLink {
+  margin-bottom: 5px;
+}
+
+.slogan .cardSlider .hCard .pic {
+  position: relative;
+  width: 400px;
+  min-width: 400px;
+  overflow: hidden;
+}
+
+.slogan .cardSlider .hCard .pic img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slogan .cardSlider .hCard .cardInfo {
+  padding: 30px;
+}
+
+.slogan .cardSlider .hCard .cardInfo .title {
+  margin-bottom: 30px;
+}
+
+.slogan .cardSlider .hCard .cardInfo .by-line .name {
+  color: var(--grey-text);
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.slogan .cardSlider .hCard .cardInfo .by-line .position {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.slogan .cardSlider.owl-carousel .owl-nav + .owl-dots {
+  margin-top: 30px;
+}
+
+.slogan .cardSlider.owl-carousel button.owl-dot span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--active-regular);
+  opacity: 0.2;
+}
+
+.slogan .cardSlider.owl-carousel button.owl-dot:hover span {
+  background-color: var(--active-regular);
+  opacity: 0.2;
+}
+
+.slogan .cardSlider.owl-carousel button.owl-dot.active span {
+  background-color: var(--active-regular);
+  opacity: 1;
+}
+
+/* -------------------------------------------------- */
+
+.companySection {
+  background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 60px;
+}
+
+.companySection .title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.companySection .companyWrapper {
+  width: 100%;
+  max-width: 1720px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.companySection .companyWrapper .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  padding: 12px;
+}
+
+.companySection .companyWrapper .item img {
+  max-width: 60%;
+  max-height: 100%;
+}
+
+.publicationsSection {
+  background-color: var(--grey-bg);
+  padding-top: 30px;
+}
+
+.publicationsSection .container {
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--grey-separator);
+}
+
+.publicationsSection .arrowLink {
+  margin-bottom: 10px;
+}
+
+.publicationsSection .title.h1 {
+  margin-bottom: 30px;
+}
+
+#pubCard-1 {
+  grid-area: pc1;
+}
+
+#pubCard-2 {
+  grid-area: pc2;
+}
+
+#pubCard-3 {
+  grid-area: pc3;
+}
+
+.publicationsSection .cardBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "pc1 pc2 pc3";
+  gap: 30px;
+}
+/* -------------------------------------------------- */
+
+@media (max-width: 1744px) {
+  .companySection .companyWrapper {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section.main {
+    background-size: cover;
+  }
+
+  .pills {
+    flex-direction: column;
+  }
+
+  .pills .pillsTab {
+    flex-direction: row;
+    overflow-x: auto;
+    max-width: calc(100vw - var(--section-padding-y) * 2);
+  }
+
+  /* .pills .pillsTab {
+    position: absolute;
+    top: -50px;
+    flex-direction: row;
+    overflow-x: auto;
+    max-width: calc(100vw);
+    padding-right: calc(var(--section-padding-y) * 2);
+  } */
+
+  .pills .linearSeparator.vertical {
+    display: none;
+  }
+
+  .pills .linearSeparator.horizontal {
+    display: block;
+  }
+
+  .services .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .slogan .cardSlider .hCard {
+    flex-direction: column;
+  }
+
+  .slogan .cardSlider .hCard .pic {
+    width: 100%;
+    height: 500px;
+    min-height: 500px;
+  }
+
+  .companySection .companyWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .publicationsSection .cardBox {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "pc1 pc2"
+      "pc3 pc3";
+  }
+}
+
+@media (max-width: 767px) {
+  .gradient::before {
+    width: 90%;
+    left: 5%;
+  }
+
+  .gradient::after {
+    width: 80%;
+    left: 10%;
+  }
+
   .section {
     padding-left: calc(var(--section-padding-y) / 2);
     padding-right: calc(var(--section-padding-y) / 2);
+  }
+
+  .section.main {
+    margin-bottom: 30px;
+  }
+
+  .pills {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .pills .pillsTab {
+    max-width: calc(100vw - var(--section-padding-y));
+  }
+
+  .pills .pillsTab .title {
+    font-size: 30px;
+  }
+
+  .pills .pillsItem .title {
+    font-size: 20px;
+  }
+
+  .services > .title {
+    margin-bottom: 30px;
+  }
+
+  .services .cardBox {
+    grid-template-columns: 100%;
+    gap: 30px;
+  }
+
+  .slogan .cardSlider {
+    width: calc(100vw - var(--section-padding-y));
+  }
+
+  .companySection .companyWrapper {
+    grid-template-columns: 100%;
+    height: 719px; /** when 720 it's buggy in the bottom*/
+    overflow-y: auto;
+  }
+
+  .companySection .companyWrapper .item {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .publicationsSection .cardBox {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "pc1"
+      "pc2"
+      "pc3";
   }
 }

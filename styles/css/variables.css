@@ -34,6 +34,11 @@
     #643e72 87.46%
   );
   --gradient-red-text: linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%);
+  --gradient-red-text-reversed: linear-gradient(
+    90deg,
+    #ef8080 0.84%,
+    #f0145a 99.96%
+  );
 
   --container-width: 1600px;
   --small-container-width: 1360px;

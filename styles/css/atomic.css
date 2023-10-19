@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+.invisible {
+  opacity: 0;
+}
+
 .unselectable {
   user-select: none;
 }
@@ -16,4 +20,52 @@
 
 .grid {
   display: grid;
+}
+
+.bg-1c4280 {
+  background-color: #1c4280;
+}
+
+.bg-143646 {
+  background-color: #143646;
+}
+
+.bg-f48b30 {
+  background-color: #f48b30;
+}
+
+.bg-9e4dc3 {
+  background-color: #9e4dc3;
+}
+
+.bg-fd9339 {
+  background-color: #fd9339;
+}
+
+.bg-e2e2e4 {
+  background-color: #e2e2e4;
+}
+
+.bg-c71c36 {
+  background-color: #c71c36;
+}
+
+.bg-dcf3f9 {
+  background-color: #dcf3f9;
+}
+
+.bg-eaeaea {
+  background-color: #eaeaea;
+}
+
+.bg-282240 {
+  background-color: #282240;
+}
+
+.bg-1d4568 {
+  background-color: #1d4568;
+}
+
+.bg-000000 {
+  background-color: #000000;
 }

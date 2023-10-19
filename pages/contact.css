@@ -5,10 +5,15 @@
 .contact .container {
   justify-content: space-between;
   gap: var(--big-gap);
+  margin-bottom: 60px;
 }
 
 .contact .container .contactInfo {
   width: calc(50% - var(--big-gap) / 2);
+}
+
+.contactInfo {
+  gap: 30px;
 }
 
 .contactInfo .text {
@@ -117,7 +122,7 @@
   background-color: var(--active-active);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .contact .container {
     flex-direction: column;
   }
@@ -130,8 +135,9 @@
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .contact .container {
     gap: 30px;
+    margin-bottom: 30px;
   }
 }

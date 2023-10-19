@@ -4,7 +4,7 @@
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 50px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   line-height: normal;
 }
 .header .container {
@@ -54,6 +54,7 @@
   list-style: none;
 }
 .header .container .info .langBlock .btn {
+  color: var(--grey-text);
   display: block;
   width: 33px;
   height: 25px;
@@ -62,6 +63,10 @@
   border-radius: 8px;
   font-size: 12px;
   font-weight: 700;
+  cursor: pointer;
+}
+.header .container .info .langBlock .btn.active {
+  cursor: default;
 }
 .header .container .info .langBlock .btn:hover {
   background-color: var(--grey-bg);
@@ -172,8 +177,13 @@
   background-color: var(--grey-separator);
 }
 .header.dark {
-  background-color: var(--main-regular);
+  background-color: transparent;
   color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 .header.dark .container .logoBlock .logo svg path:not(:first-child) {
   fill: #fff;
@@ -212,7 +222,7 @@
   color: #fff;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .header .container {
     flex-wrap: nowrap;
     gap: 30px;
@@ -231,7 +241,7 @@
     align-self: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     padding: 0;
     margin-bottom: 30px;

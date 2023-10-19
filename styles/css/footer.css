@@ -2,7 +2,6 @@
 .footer {
   background-color: var(--grey-bg);
   padding: 30px 60px;
-  margin-top: 60px;
   line-height: normal;
 }
 .footer .container {
@@ -57,7 +56,7 @@
   align-self: flex-end;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .footer .container {
     height: 129px;
     flex-wrap: nowrap;
@@ -68,10 +67,9 @@
     text-align: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
     padding: 30px;
-    margin-top: 30px;
   }
   .footer .container {
     height: 214px;
