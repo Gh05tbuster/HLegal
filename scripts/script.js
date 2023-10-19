@@ -1,6 +1,10 @@
 $(document).ready(function () {
     $('.burger').click(function (event) {
-        showPopup();
+        showPopupNav();
+    });
+
+    $('.consultation').click(function (event) {
+        showPopupFrom();
     });
 
     $('.closeBtn').click(function () {
@@ -26,13 +30,33 @@ $(document).ready(function () {
     })
 });
 
-function showPopup() {
-    $('.headerNav').addClass('floating');
+//* for nav inside header (issues with z-index)
+
+// function showPopup() {
+//     $('.headerNav').addClass('floating');
+//     $('.popupWrapper').removeClass('hidden');
+// }
+// function hidePopup() {
+//     $('.headerNav').removeClass('floating');
+//     $('.popupWrapper').addClass('hidden');
+// }
+
+//* for nav inside popup
+
+function showPopupNav() {
+    $('.burgerNav').removeClass('hidden');
     $('.popupWrapper').removeClass('hidden');
 }
+
+function showPopupForm() {
+    $('.burgerNav').removeClass('hidden');
+    $('.contactForm').removeClass('hidden');
+}
+
 function hidePopup() {
-    $('.headerNav').removeClass('floating');
+    $('.burgerNav').addClass('hidden');
     $('.popupWrapper').addClass('hidden');
+    $('.contactFrom').addClass('hidden');
 }
 
 function scrollDown(elem) {
@@ -66,7 +90,6 @@ $('.pills .pillsTab .title').click(function (event) {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             pi = el.id;
-            // $('.pills .tabContent .' + pi).fadeOut(1000);
             $('.pills .tabContent .' + pi).removeClass('active');
             $('.pills .tabContent .' + pi).addClass('hidden');
             return false;
@@ -75,7 +98,6 @@ $('.pills .pillsTab .title').click(function (event) {
 
     pi = event.target.id;
     $('.pills .pillsTab #' + pi).addClass('active');
-    // $('.pills .tabContent .' + pi).fadeIn(1000);
     $('.pills .tabContent .' + pi).addClass('active');
     $('.pills .tabContent .' + pi).removeClass('hidden');
 });

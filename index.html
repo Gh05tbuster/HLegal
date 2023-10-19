@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/icons/h.svg" type="image/x-icon">
     <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./styles/css/components.css">
@@ -448,12 +446,27 @@
             <p class="copyright">© 2021 HLEGAL Law company, LLC</p>
         </div>
     </footer>
-    <div class="popupWrapper hidden"></div>
+
+    <div class="popupWrapper hidden">
+        <nav class="burgerNav hidden">
+            <svg class="closeBtn" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                    <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                </g>
+            </svg>
+            <a href="./pages/about.html" class="navItem">about us</a>
+            <a href="./pages/services.html" class="navItem">services</a>
+            <a href="./pages/team.html" class="navItem">team</a>
+            <a href="./pages/publications.html" class="navItem">publications</a>
+            <a href="./pages/contact.html" class="navItem">contact</a>
+        </nav>
+    </div>
+
     <script src="./assets/jquery/jquery-3.7.1.js"></script>
-    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="./scripts/script.js"></script>
-
 </body>
 
 </html>

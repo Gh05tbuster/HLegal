@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+.invisible {
+  opacity: 0;
+}
+
 .unselectable {
   user-select: none;
 }

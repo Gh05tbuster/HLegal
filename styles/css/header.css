@@ -183,7 +183,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
 }
 .header.dark .container .logoBlock .logo svg path:not(:first-child) {
   fill: #fff;
