@@ -243,6 +243,78 @@ select {
 
 /* --------------------------------------------*/
 
+.slogan .slider {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.slogan .slider .hCard {
+  background-color: var(--grey-bg);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slogan .slider .hCard .arrowLink {
+  margin-bottom: 5px;
+}
+
+.slogan .slider .hCard .pic {
+  position: relative;
+  width: 400px;
+  min-width: 400px;
+  overflow: hidden;
+}
+
+.slogan .slider .hCard .pic img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slogan .slider .hCard .cardInfo {
+  padding: 30px;
+}
+
+.slogan .slider .hCard .cardInfo .title {
+  margin-bottom: 30px;
+}
+
+.slogan .slider .hCard .cardInfo .by-line .name {
+  color: var(--grey-text);
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.slogan .slider .hCard .cardInfo .by-line .position {
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.cardSlider.owl-carousel .owl-nav + .owl-dots {
+  margin-top: 30px;
+}
+
+.cardSlider.owl-carousel button.owl-dot span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--active-regular);
+  opacity: 0.2;
+}
+
+.cardSlider.owl-carousel button.owl-dot.active span {
+  background-color: var(--active-regular);
+  opacity: 1;
+}
+
+/* -------------------------------------------------- */
+
+/* --------------------------------------------*/
+
 .cardSlider {
   width: 100%;
   margin-bottom: 60px;
@@ -252,6 +324,7 @@ select {
   /* width: 100%; */
   background-color: var(--grey-bg);
   border-radius: 12px;
+  overflow: hidden;
 }
 
 .cardSlider .hCard .arrowLink {
@@ -263,7 +336,6 @@ select {
   width: 400px;
   min-width: 400px;
   overflow: hidden;
-  border-radius: 12px 0 0 12px;
 }
 
 .cardSlider .hCard .pic img {
@@ -272,7 +344,6 @@ select {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 12px 0 0 12px; */
 }
 
 .cardSlider .hCard .cardInfo {
@@ -418,6 +489,16 @@ select {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .slogan .slider .hCard {
+    flex-direction: column;
+  }
+
+  .slogan .slider .hCard .pic {
+    width: 100%;
+    height: 500px;
+    min-height: 500px;
+  }
+
   .companySection .companyWrapper {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -431,6 +512,16 @@ select {
 }
 
 @media (max-width: 768px) {
+  .gradient::before {
+    width: 90%;
+    left: 5%;
+  }
+
+  .gradient::after {
+    width: 80%;
+    left: 10%;
+  }
+
   .section {
     padding-left: calc(var(--section-padding-y) / 2);
     padding-right: calc(var(--section-padding-y) / 2);
@@ -469,7 +560,7 @@ select {
 
   .companySection .companyWrapper {
     grid-template-columns: 100%;
-    height: 720px;
+    height: 719px; /** when 720 it's buggy in the bottom*/
     overflow-y: auto;
   }
 
