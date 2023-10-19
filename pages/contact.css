@@ -122,7 +122,7 @@
   background-color: var(--active-active);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .contact .container {
     flex-direction: column;
   }
@@ -135,7 +135,7 @@
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .contact .container {
     gap: 30px;
     margin-bottom: 30px;

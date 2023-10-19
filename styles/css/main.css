@@ -393,19 +393,17 @@ select {
 }
 /* -------------------------------------------------- */
 
-/* @media (max-width: 1919px) {
-  .cardSlider {
-    width: calc(100vw - var(--section-padding-y) * 2);
-  }
-} */
-
-@media (max-width: 1745px) {
+@media (max-width: 1744px) {
   .companySection .companyWrapper {
     border-radius: 0;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+  .section.main {
+    background-size: cover;
+  }
+
   .pills {
     flex-direction: column;
   }
@@ -451,7 +449,7 @@ select {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .gradient::before {
     width: 90%;
     left: 5%;
@@ -468,7 +466,6 @@ select {
   }
 
   .section.main {
-    background-size: cover;
     margin-bottom: 30px;
   }
 
