@@ -39,7 +39,7 @@ function scrollDown(elem) {
     event.preventDefault();
     const target = document.querySelector(elem.hash);
     window.scrollTo({
-        top: target.offsetTop - 10,
+        top: target.offsetTop - 30,
         behavior: "smooth"
     });
 }
