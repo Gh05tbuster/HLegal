@@ -7,7 +7,7 @@
 }
 
 .linearSeparator.vertical {
-  width: 4px;
+  width: 8px;
   background-color: var(--grey-separator);
 }
 
