@@ -50,13 +50,13 @@ function showPopupNav() {
 
 function showPopupForm() {
     $('.burgerNav').removeClass('hidden');
-    $('.contactForm').removeClass('hidden');
+    $('.contactForm.popup').removeClass('hidden');
 }
 
 function hidePopup() {
     $('.burgerNav').addClass('hidden');
     $('.popupWrapper').addClass('hidden');
-    $('.contactFrom').addClass('hidden');
+    $('.contactFrom.popup').addClass('hidden');
 }
 
 function scrollDown(elem) {
