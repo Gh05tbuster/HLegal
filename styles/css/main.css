@@ -14,7 +14,7 @@ html {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  color: var(--text-color);
+  color: var(--main-regular);
 }
 
 body {
@@ -310,7 +310,7 @@ select {
 
 .slogan .cardSlider.owl-carousel button.owl-dot:hover span {
   background-color: var(--active-regular);
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .slogan .cardSlider.owl-carousel button.owl-dot.active span {
@@ -355,21 +355,11 @@ select {
   max-height: 100%;
 }
 
-.publicationsSection {
-  background-color: var(--grey-bg);
-  padding-top: 30px;
-}
-
-.publicationsSection .container {
-  padding-bottom: 30px;
-  border-bottom: 2px solid var(--grey-separator);
-}
-
-.publicationsSection .arrowLink {
+.section.grey.publications .arrowLink {
   margin-bottom: 10px;
 }
 
-.publicationsSection .title.h1 {
+.section.grey.publications .title.h1 {
   margin-bottom: 30px;
 }
 
@@ -385,12 +375,13 @@ select {
   grid-area: pc3;
 }
 
-.publicationsSection .cardBox {
+.section.grey.publications .cardBox {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "pc1 pc2 pc3";
   gap: 30px;
 }
+
 /* -------------------------------------------------- */
 
 @media (max-width: 1744px) {
@@ -449,7 +440,7 @@ select {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .publicationsSection .cardBox {
+  .section.grey.publications .cardBox {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "pc1 pc2"
@@ -520,7 +511,7 @@ select {
     margin-right: auto;
   }
 
-  .publicationsSection .cardBox {
+  .section.grey.publications .cardBox {
     grid-template-columns: 100%;
     grid-template-areas:
       "pc1"

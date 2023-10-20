@@ -7,7 +7,7 @@
 }
 
 .linearSeparator.vertical {
-  width: 4px;
+  width: 8px;
   background-color: var(--grey-separator);
 }
 
@@ -87,6 +87,16 @@
   margin-bottom: 15px;
 }
 
+.section.grey {
+  background-color: var(--grey-bg);
+  padding-top: 30px;
+}
+
+.section.grey {
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--grey-separator);
+}
+
 .publicationCard {
   background-color: #fff;
   display: flex;
@@ -138,4 +148,74 @@
 
 .arrowLink:hover svg path {
   stroke: var(--accent);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1 0 0;
+  width: 50%;
+  padding: 30px;
+  background-color: var(--grey-bg);
+  border-radius: 12px;
+}
+
+.contactForm .title.h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contactForm .title.h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--grey-text);
+}
+
+.contactForm .textInput {
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  resize: none;
+  transition: none;
+}
+
+.contactForm .textInput::placeholder {
+  color: var(--grey-text);
+}
+
+.contactForm .textInput:focus {
+  outline: 1px solid var(--active-regular);
+}
+
+.contactForm .textInput:invalid {
+  outline: 1px solid #f00;
+}
+
+.contactForm .textInput:disabled {
+  background-color: var(--grey-bg-alt);
+}
+
+.contactForm .submit {
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 18px 30px;
+  background-color: var(--active-regular);
+  box-shadow: 0 0 20px #24a3ff80;
+  color: #fff;
+  font-weight: 700;
+}
+
+.contactForm .submit:hover {
+  background-color: var(--active-hover);
+}
+
+.contactForm .submit:active {
+  background-color: var(--active-active);
 }

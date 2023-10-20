@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/icons/h.svg" type="image/x-icon">
     <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="../styles/css/components.css">
     <link rel="stylesheet" href="../styles/css/main.css">
     <link rel="stylesheet" href="../styles/css/atomic.css">
-    <link rel="stylesheet" href="./contact.css">
-    <title>HLegal - contact</title>
+    <link rel="stylesheet" href="./about.css">
+    <title>HLegal - about us</title>
 </head>
 
 <body>
@@ -66,7 +68,7 @@
                         </svg>
                     </a>
                     <img src="../images/icons/slash.svg" alt="" class="slash">
-                    <p class="pageName">contact</p>
+                    <p class="pageName">about us</p>
                 </div>
                 <svg class="burger" width="32" height="32" viewBox="0 0 32 32" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -113,59 +115,118 @@
                         <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
                     </g>
                 </svg>
-                <a href="./about.html" class="navItem">about us</a>
+                <p class="navItem active">about us</p>
                 <a href="./services.html" class="navItem">services</a>
                 <a href="./team.html" class="navItem">team</a>
                 <a href="./publications.html" class="navItem">publications</a>
-                <p class="navItem active">contact</p>
+                <a href="./contact.html" class="navItem">contact</a>
             </nav>
         </div>
     </header>
 
     <main class="main">
-        <section class="section contact">
-            <div class="container small  flex">
-                <div class="contactInfo flex column">
-                    <a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4367984,30.5301301,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!8m2!3d50.436795!4d30.532705!16s%2Fg%2F11c5mrd800?entry=ttu"
-                        class="address">
-                        <p class="text">Kyiv, </p>
-                        <p class="text">Mechnikova str, 14/1</p>
-                    </a>
-                    <div class="linearSeparator horizontal"></div>
-                    <div class="contactData">
-                        <p class="text tel"><a href="tel:0800211927">0800 211 927</a></p>
-                        <p class="text link"><a href="mailto:contact@forstudy.space">contact@forstudy.space</a></p>
+        <section class="section top">
+            <div class="container small flex">
+                <div class="textBlock">
+                    <h1 class="title h1">We turn over the idea of legal services</h1>
+                    <p class="text">Consolidating many years of experience and practice, the company's lawyers accompany
+                        complex projects and achieve the adoption of a number of decisions that are important for the
+                        industry. Many people form the practice of applying the law of the sea in Ukraine. </p>
+                    <p class="text">HLEGAL is a reliable business partner, confirmed by stable cooperation with
+                        international law firms, the trust of large Ukrainian and international companies, and the
+                        recognition of professional ratings.</p>
+                </div>
+                <div class="sideBlock flex column">
+                    <div class="item">
+                        <div class="number flex aic">
+                            <img src="../images/icons/Experience.svg" alt="flag">
+                            <h2 class="title h1">10+</h2>
+                        </div>
+                        <p class="text">years of relevant experience</p>
                     </div>
-                    <div class="linearSeparator horizontal"></div>
-                    <div class="fbBlock">
-                        <a href="#" class="fbLink flex">
-                            <svg class="facebook" onclick="" width="38" height="38" viewBox="0 0 38 38" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_22721_6812)">
-                                    <path
-                                        d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
-                                        fill="#24A3FF" />
-                                </g>
-                                <defs>
-                                    <clippath>
-                                        <rect width="38" height="38" fill="white" />
-                                    </clippath>
-                                </defs>
-                            </svg>
-                            <div class="linkText">Our page on facebook</div>
-                        </a>
+
+                    <div class="item">
+                        <div class="number flex aic">
+                            <img src="../images/icons/Clients.svg" alt="case">
+                            <h2 class="title h1">30+</h2>
+                        </div>
+                        <p class="text">active clients who entrust us with their orders on a monthly basis</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="number flex aic">
+                            <img src="../images/icons/Hours.svg" alt="star">
+                            <h2 class="title h1">500+</h2>
+                        </div>
+                        <p class="text">hours of pro bono work annually</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="section photo flex aic jcc">
+            <h3 class="title">Team</h3>
+        </section>
+        <section class="section bottom">
+            <div class="container small flex">
+                <div class="textBlock">
+                    <p class="text">The historically unchanged legal profession has begun to reformat in recent years.
+                        Clients are feeling this, but law firms are still resisting evolution. Clients need convenience,
+                        simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the
+                        technological revolution in legal services has begun and is imminent.</p>
+                    <p class="text">Quality is what we care about the most.</p>
+                    <p class="text">It's simple. If you are unhappy with our work, we will refund your money. We trust
+                        our clients. And we want our clients to trust us too.</p>
+                </div>
+                <div class="sideBlock">
+                    <h2 class="title h1">Quality is what we care about the most.</h2>
+                </div>
 
-                <form action="" class="form contactForm">
-                    <h1 class="title h1">We would like to help you</h1>
-                    <input type="text" name="name" placeholder="Name" class="textInput">
-                    <textarea name="message" rows="10" placeholder="Message" class="textInput"></textarea>
-                    <h3 class="title h3 caps">How to answer you?</h3>
-                    <input type="tel" name="tel" placeholder="Phone number" class="textInput">
-                    <input type="email" name="email" placeholder="Email" class="textInput">
-                    <button type="submit" class="submit">Send message</button>
-                </form>
+            </div>
+        </section>
+
+        <section class="section achievements grey">
+            <div class="container">
+                <h3 class="title h3 caps">Achievements</h3>
+                <div class="achieveSlider owl-carousel owl-theme">
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-1.png" alt="the legal 500">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-2.png" alt="legal awards 2017">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-3.png" alt="2017 market leaders">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-4.png" alt="ULF 2017">
+                    </div>
+
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-1.png" alt="the legal 500">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-2.png" alt="legal awards 2017">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-3.png" alt="2017 market leaders">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-4.png" alt="ULF 2017">
+                    </div>
+
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-1.png" alt="the legal 500">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-2.png" alt="legal awards 2017">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-3.png" alt="2017 market leaders">
+                    </div>
+                    <div class="smallCard flex aic jcc">
+                        <img src="../images/Achievment-4.png" alt="ULF 2017">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -214,14 +275,16 @@
                     <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
                 </g>
             </svg>
-            <a href="./about.html" class="navItem">about us</a>
+            <p class="navItem active">about us</p>
             <a href="./services.html" class="navItem">services</a>
             <a href="./team.html" class="navItem">team</a>
             <a href="./publications.html" class="navItem">publications</a>
-            <p class="navItem active">contact</p>
+            <a href="./contact.html" class="navItem">contact</a>
         </nav>
     </div>
+
     <script src="../assets/jquery/jquery-3.7.1.js"></script>
+    <script src="../assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="../scripts/script.js"></script>
 </body>
 

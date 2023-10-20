@@ -1,0 +1,192 @@
+.section.top .container {
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.section.top .textBlock .title {
+  margin-bottom: 30px;
+}
+
+.section.top .textBlock .text {
+  color: #000;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.section.top .textBlock .text:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.section.top .sideBlock {
+  min-width: 365px;
+  gap: 40px;
+  padding-left: 30px;
+  border-left: 4px solid var(--grey-separator);
+  align-self: start;
+}
+
+.section.top .sideBlock .number {
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.section.top .sideBlock .number img {
+  width: 32px;
+  height: 32px;
+}
+
+.section.top .sideBlock .number .title {
+  font-size: 36px;
+}
+
+/* ------------------------------------------------ */
+
+.section.photo {
+  background: url(../images/Team.png) no-repeat center/cover;
+  aspect-ratio: 1920/584;
+  margin-bottom: 60px;
+}
+
+.section.photo .title {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  text-shadow: 0px 15px 30px #282856cc;
+  text-transform: uppercase;
+  font-size: 96px;
+  /* font-size: 5vw; */
+  letter-spacing: 63px;
+  margin-right: -63px;
+}
+
+/* ---------------------------------------------- */
+
+.section.bottom {
+  margin-bottom: 60px;
+}
+
+.section.bottom .container {
+  gap: 60px;
+}
+
+.section.bottom .textBlock .text {
+  color: #000;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.section.bottom .textBlock .text:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.section.bottom .sideBlock {
+  min-width: 365px;
+}
+
+/* -------------------------------------------- */
+
+.section.achievements .container {
+  height: 202px;
+}
+
+.test {
+  position: relative;
+}
+
+.section.achievements .container > .title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section.achievements .achieveSlider {
+  max-width: var(--container-width);
+  width: calc(100vw - var(--section-padding-y) * 2);
+  position: absolute;
+}
+
+.section.achievements .achieveSlider .smallCard {
+  background-color: #fff;
+  border-radius: 12px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.section.achievements .achieveSlider .smallCard img {
+  object-fit: contain;
+  height: 60px;
+}
+
+.section.achievements .achieveSlider.owl-carousel .owl-nav + .owl-dots {
+  margin-top: 30px;
+}
+
+.section.achievements .achieveSlider.owl-carousel button.owl-dot span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--active-regular);
+  opacity: 0.2;
+}
+
+.section.achievements .achieveSlider.owl-carousel button.owl-dot:hover span {
+  background-color: var(--active-regular);
+  opacity: 0.6;
+}
+
+.section.achievements .achieveSlider.owl-carousel button.owl-dot.active span {
+  background-color: var(--active-regular);
+  opacity: 1;
+}
+
+@media (max-width: 1439px) {
+  .section.photo .title {
+    font-size: 86px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section.top .container {
+    flex-direction: column;
+  }
+
+  .section.photo .title {
+    font-size: 46px;
+  }
+
+  .section.bottom .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section.achievements .achieveSlider .smallCard img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section.top {
+    margin-bottom: 30px;
+  }
+
+  .section.photo {
+    margin-bottom: 30px;
+  }
+
+  .section.photo .title {
+    font-size: 36px;
+    letter-spacing: 13px;
+  }
+
+  .section.bottom {
+    margin-bottom: 30px;
+  }
+
+  .section.achievements .achieveSlider {
+    width: calc(100vw - var(--section-padding-y));
+  }
+}
+
+@media (max-width: 399px) {
+  .section.achievements .achieveSlider {
+    width: calc(100vw);
+  }
+}

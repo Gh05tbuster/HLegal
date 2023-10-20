@@ -18,6 +18,14 @@
   flex-direction: column;
 }
 
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
 .grid {
   display: grid;
 }

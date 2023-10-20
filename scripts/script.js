@@ -28,6 +28,21 @@ $(document).ready(function () {
         margin: 20,
         items: 1,
     })
+
+    $('.achieveSlider').owlCarousel({
+        loop: false,
+        margin: 40,
+        responsive: {
+            0: {
+                items: 1,
+                dotsEach: 2,
+            },
+
+            768: {
+                items: 4,
+            }
+        },
+    })
 });
 
 //* for nav inside header (issues with z-index)
@@ -50,13 +65,13 @@ function showPopupNav() {
 
 function showPopupForm() {
     $('.burgerNav').removeClass('hidden');
-    $('.contactForm').removeClass('hidden');
+    $('.contactForm.popup').removeClass('hidden');
 }
 
 function hidePopup() {
     $('.burgerNav').addClass('hidden');
     $('.popupWrapper').addClass('hidden');
-    $('.contactFrom').addClass('hidden');
+    $('.contactFrom.popup').addClass('hidden');
 }
 
 function scrollDown(elem) {
