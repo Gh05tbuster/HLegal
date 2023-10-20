@@ -185,8 +185,8 @@
   }
 }
 
-@media (max-width: 399px) {
+/* @media (max-width: 399px) {
   .section.achievements .achieveSlider {
     width: calc(100vw);
   }
-}
+} */
