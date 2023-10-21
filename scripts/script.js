@@ -4,7 +4,7 @@ $(document).ready(function () {
     });
 
     $('.consultation').click(function (event) {
-        showPopupFrom();
+        showPopupForm();
     });
 
     $('.closeBtn').click(function () {
@@ -12,12 +12,12 @@ $(document).ready(function () {
     });
 
     $('.popupWrapper').click(function () {
-        hidePopup();
+        if (event.target == this) hidePopup();
     });
 
-    $(window).on("scroll", function () {
-        hidePopup();
-    });
+    // $(window).on("scroll", function () {
+    //     hidePopup();
+    // });
 
     $(window).on("resize", function () {
         hidePopup();
@@ -64,14 +64,14 @@ function showPopupNav() {
 }
 
 function showPopupForm() {
-    $('.burgerNav').removeClass('hidden');
     $('.contactForm.popup').removeClass('hidden');
+    $('.popupWrapper').removeClass('hidden');
 }
 
 function hidePopup() {
     $('.burgerNav').addClass('hidden');
+    $('.contactForm.popup').addClass('hidden');
     $('.popupWrapper').addClass('hidden');
-    $('.contactFrom.popup').addClass('hidden');
 }
 
 function scrollDown(elem) {

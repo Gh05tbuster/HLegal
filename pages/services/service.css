@@ -1,0 +1,94 @@
+.header.dark {
+  position: static;
+}
+
+.section.service {
+  margin-bottom: 60px;
+}
+
+.section.service .container {
+  gap: 30px;
+  text-align: center;
+}
+
+.section.service .serviceText {
+  gap: 20px;
+}
+
+.section.serviceList .container {
+  gap: 30px;
+}
+
+.section.serviceList .linearSeparator {
+  opacity: 0.5;
+}
+
+.section.serviceList .title {
+  color: #fff;
+}
+
+.section.serviceList .list {
+  list-style: none;
+  columns: 2;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: -40px;
+}
+
+.section.serviceList .list .item {
+  position: relative;
+  margin-left: 60px;
+}
+
+.section.serviceList .list .item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.section.serviceList .list .item::before {
+  content: "•";
+  position: absolute;
+  top: -3px;
+  left: -20px;
+  font-size: 50px;
+  color: var(--accent);
+}
+
+.contactForm.popup {
+  max-width: 650px;
+}
+
+.contactForm.popup .upperLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactForm.popup .title.h1 {
+  font-size: 38px;
+}
+
+.contactForm.popup .closeBtn {
+  cursor: pointer;
+  align-self: start;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.contactForm.popup .closeBtn:hover {
+  background-color: var(--grey-separator);
+}
+
+@media (max-width: 767px) {
+  .section.service {
+    margin-bottom: 30px;
+  }
+
+  .section.section.serviceList .list {
+    columns: 1;
+  }
+
+  .contactForm .popup {
+    width: 100%;
+  }
+}
