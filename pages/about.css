@@ -84,14 +84,6 @@
 
 /* -------------------------------------------- */
 
-.section.achievements .container {
-  height: 202px;
-}
-
-.test {
-  position: relative;
-}
-
 .section.achievements .container > .title {
   margin-bottom: 30px;
   text-align: center;
@@ -100,7 +92,6 @@
 .section.achievements .achieveSlider {
   max-width: var(--container-width);
   width: calc(100vw - var(--section-padding-y) * 2);
-  position: absolute;
 }
 
 .section.achievements .achieveSlider .smallCard {
