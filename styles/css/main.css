@@ -164,7 +164,7 @@ select {
 }
 
 .pills .linearSeparator {
-  background-color: #fff5;
+  opacity: 0.5;
 }
 
 .pills .linearSeparator.horizontal {
@@ -449,6 +449,10 @@ select {
 }
 
 @media (max-width: 767px) {
+  .title.h1 {
+    font-size: 30px;
+  }
+
   .gradient::before {
     width: 90%;
     left: 5%;
