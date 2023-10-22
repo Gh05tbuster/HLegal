@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 img {
@@ -246,7 +246,7 @@ select {
 
 .slogan .cardSlider {
   max-width: var(--container-width);
-  width: calc(100vw - var(--section-padding-y) * 2);
+  width: calc(100vw - var(--section-padding-y) * 2 - 17px);
   margin-bottom: 60px;
 }
 
@@ -397,23 +397,23 @@ select {
 
   .pills {
     flex-direction: column;
-    margin-top: 96px;
+    /* margin-top: 96px; */
+  }
+
+  .pills .pillsTab {
+    flex-direction: row;
+    overflow-x: auto;
+    max-width: calc(100vw - var(--section-padding-y) * 2 - 17px);
   }
 
   /* .pills .pillsTab {
-    flex-direction: row;
-    overflow-x: auto;
-    max-width: calc(100vw - var(--section-padding-y) * 2);
-  } */
-
-  .pills .pillsTab {
     position: absolute;
     top: -66px;
     flex-direction: row;
     overflow-x: auto;
-    max-width: calc(100vw);
+    max-width: calc(100vw - var(--section-padding-y) * 2 - 17px);
     padding-right: calc(var(--section-padding-y) * 2);
-  }
+  } */
 
   .pills .linearSeparator.vertical {
     display: none;
@@ -478,14 +478,14 @@ select {
     margin-bottom: 30px;
   }
 
-  /* .pills .pillsTab {
-    max-width: calc(100vw - var(--section-padding-y));
-  } */
-
   .pills .pillsTab {
+    max-width: calc(100vw - var(--section-padding-y) - 17px);
+  }
+
+  /* .pills .pillsTab {
     max-width: calc(100vw);
     padding-right: calc(var(--section-padding-y));
-  }
+  } */
 
   .pills .pillsTab .title {
     font-size: 30px;
@@ -506,6 +506,7 @@ select {
 
   .slogan .cardSlider {
     width: calc(100vw - var(--section-padding-y));
+    /* width: calc(100vw - var(--section-padding-y) - 17px); */
   }
 
   .companySection .companyWrapper {
