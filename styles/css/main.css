@@ -478,8 +478,13 @@ select {
     margin-bottom: 30px;
   }
 
-  .pills .pillsTab {
+  /* .pills .pillsTab {
     max-width: calc(100vw - var(--section-padding-y));
+  } */
+
+  .pills .pillsTab {
+    max-width: calc(100vw);
+    padding-right: calc(var(--section-padding-y));
   }
 
   .pills .pillsTab .title {
