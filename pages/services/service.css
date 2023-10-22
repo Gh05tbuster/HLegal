@@ -60,10 +60,12 @@
 .contactForm.popup .upperLine {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .contactForm.popup .title.h1 {
   font-size: 38px;
+  margin-bottom: 30px;
 }
 
 .contactForm.popup .closeBtn {
@@ -79,6 +81,23 @@
   background-color: var(--grey-separator);
 }
 
+.contactForm.popup .title.h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.contactForm.popup .textInput.name {
+  margin-bottom: 15px;
+}
+
+.contactForm.popup .textInput.tel {
+  margin-bottom: 15px;
+}
+
+.contactForm.popup .submit {
+  margin-top: 30px;
+}
+
 @media (max-width: 767px) {
   .section.service {
     margin-bottom: 30px;
@@ -88,7 +107,11 @@
     columns: 1;
   }
 
-  .contactForm .popup {
+  .contactForm.popup {
     width: 100%;
+  }
+
+  .contactForm.popup .title.h1 {
+    font-size: 30px;
   }
 }

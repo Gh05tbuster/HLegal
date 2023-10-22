@@ -58,6 +58,28 @@
   width: calc(50% - var(--big-gap) / 2);
 }
 
+.contactForm .title.h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contactForm .title.h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.contactForm .textInput.name {
+  margin-bottom: 15px;
+}
+
+.contactForm .textInput.tel {
+  margin-bottom: 15px;
+}
+
+.contactForm .submit {
+  margin-top: 30px;
+}
+
 @media (max-width: 1023px) {
   .contact .container {
     flex-direction: column;
