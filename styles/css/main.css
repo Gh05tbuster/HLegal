@@ -397,22 +397,23 @@ select {
 
   .pills {
     flex-direction: column;
-  }
-
-  .pills .pillsTab {
-    flex-direction: row;
-    overflow-x: auto;
-    max-width: calc(100vw - var(--section-padding-y) * 2);
+    margin-top: 96px;
   }
 
   /* .pills .pillsTab {
+    flex-direction: row;
+    overflow-x: auto;
+    max-width: calc(100vw - var(--section-padding-y) * 2);
+  } */
+
+  .pills .pillsTab {
     position: absolute;
-    top: -50px;
+    top: -66px;
     flex-direction: row;
     overflow-x: auto;
     max-width: calc(100vw);
     padding-right: calc(var(--section-padding-y) * 2);
-  } */
+  }
 
   .pills .linearSeparator.vertical {
     display: none;
