@@ -115,3 +115,11 @@
     font-size: 30px;
   }
 }
+
+.companySection {
+  margin-bottom: 0;
+}
+
+.companyWrapper::-webkit-scrollbar {
+  display: none;
+}
