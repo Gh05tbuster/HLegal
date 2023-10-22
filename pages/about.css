@@ -42,7 +42,7 @@
 /* ------------------------------------------------ */
 
 .section.photo {
-  background: url(../images/Team.png) no-repeat center/cover;
+  background: url(../images/Team.webp) no-repeat center/cover;
   aspect-ratio: 1920/584;
   margin-bottom: 60px;
 }
